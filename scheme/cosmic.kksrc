@@ -1,22 +1,36 @@
 [kwin]
 _k_friendly_name=KWin
-Switch to Window Left=Meta+H	Meta+Left,none,Switch to Window Left
-Switch to Window Down=Meta+J	Meta+Down,none,Switch to Window Down
-Switch to Window Up=Meta+K	Meta+Up,none,Switch to Window Up
-Switch to Window Right=Meta+L	Meta+Right,none,Switch to Window Right
-Window Pack Left=Meta+Shift+H	Meta+Shift+Left,none,Window Pack Left
-Window Pack Down=Meta+Shift+J	Meta+Shift+Down,none,Window Pack Down
-Window Pack Up=Meta+Shift+K	Meta+Shift+Up,none,Window Pack Up
-Window Pack Right=Meta+Shift+L	Meta+Shift+Right,none,Window Pack Right
-Switch to Desktop 1=Meta+1,none,Switch to Desktop 1
-Switch to Desktop 2=Meta+2,none,Switch to Desktop 2
-Switch to Desktop 3=Meta+3,none,Switch to Desktop 3
-Switch to Desktop 4=Meta+4,none,Switch to Desktop 4
+
+# Window focus (Cosmic: Super+{h,j,k,l,arrows})
+Switch Window Left=Meta+H	Meta+Left	Meta+Alt+Left,Meta+Alt+Left,Switch to Window to the Left
+Switch Window Down=Meta+J	Meta+Down	Meta+Alt+Down,Meta+Alt+Down,Switch to Window Below
+Switch Window Up=Meta+K	Meta+Up	Meta+Alt+Up,Meta+Alt+Up,Switch to Window Above
+Switch Window Right=Meta+L	Meta+Right	Meta+Alt+Right,Meta+Alt+Right,Switch to Window to the Right
+
+# Window Pack (Cosmic: Super+Shift+{h,j,k,l,arrows})
+Window Pack Left=Meta+Shift+H	Meta+Shift+Left,none,Move Window Left
+Window Pack Down=Meta+Shift+J	Meta+Shift+Down,none,Move Window Down
+Window Pack Up=Meta+Shift+K	Meta+Shift+Up,none,Move Window Up
+Window Pack Right=Meta+Shift+L	Meta+Shift+Right,none,Move Window Right
+
+# Clear Quick Tile arrows (conflict with focus navigation)
+Window Quick Tile Left=none,none,Quick Tile Window to the Left
+Window Quick Tile Right=none,none,Quick Tile Window to the Right
+Window Quick Tile Top=none,none,Quick Tile Window to the Top
+Window Quick Tile Bottom=none,none,Quick Tile Window to the Bottom
+
+# Workspace switching (Cosmic: Super+{1-9})
+Switch to Desktop 1=Meta+1	Ctrl+F1	Meta+F1,Ctrl+F1	Meta+F1,Switch to Desktop 1
+Switch to Desktop 2=Meta+2	Ctrl+F2	Meta+F2,Ctrl+F2	Meta+F2,Switch to Desktop 2
+Switch to Desktop 3=Meta+3	Ctrl+F3	Meta+F3,Ctrl+F3	Meta+F3,Switch to Desktop 3
+Switch to Desktop 4=Meta+4	Ctrl+F4	Meta+F4,Ctrl+F4	Meta+F4,Switch to Desktop 4
 Switch to Desktop 5=Meta+5,none,Switch to Desktop 5
 Switch to Desktop 6=Meta+6,none,Switch to Desktop 6
 Switch to Desktop 7=Meta+7,none,Switch to Desktop 7
 Switch to Desktop 8=Meta+8,none,Switch to Desktop 8
 Switch to Desktop 9=Meta+9,none,Switch to Desktop 9
+
+# Move window to workspace (Cosmic: Super+Shift+{1-9})
 Window to Desktop 1=Meta+Shift+1,none,Window to Desktop 1
 Window to Desktop 2=Meta+Shift+2,none,Window to Desktop 2
 Window to Desktop 3=Meta+Shift+3,none,Window to Desktop 3
@@ -26,52 +40,57 @@ Window to Desktop 6=Meta+Shift+6,none,Window to Desktop 6
 Window to Desktop 7=Meta+Shift+7,none,Window to Desktop 7
 Window to Desktop 8=Meta+Shift+8,none,Window to Desktop 8
 Window to Desktop 9=Meta+Shift+9,none,Window to Desktop 9
-Switch One Desktop to the Left=Meta+Ctrl+H	Meta+Ctrl+Left,none,Switch One Desktop to the Left
-Switch One Desktop Down=Meta+Ctrl+J	Meta+Ctrl+Down,none,Switch One Desktop Down
-Switch One Desktop Up=Meta+Ctrl+K	Meta+Ctrl+Up,none,Switch One Desktop Up
-Switch One Desktop to the Right=Meta+Ctrl+L	Meta+Ctrl+Right,none,Switch One Desktop to the Right
-Window One Desktop to the Left=Meta+Shift+Ctrl+H	Meta+Shift+Ctrl+Left,none,Window One Desktop to the Left
-Window One Desktop Down=Meta+Shift+Ctrl+J	Meta+Shift+Ctrl+Down,none,Window One Desktop Down
-Window One Desktop Up=Meta+Shift+Ctrl+K	Meta+Shift+Ctrl+Up,none,Window One Desktop Up
-Window One Desktop to the Right=Meta+Shift+Ctrl+L	Meta+Shift+Ctrl+Right,none,Window One Desktop to the Right
-Window Close=Meta+Q,none,Window Close
-Window Maximize=Meta+M,none,Window Maximize
-Window FullScreen=Meta+F11,none,Window FullScreen
-Window Resize=Meta+R,none,Window Resize
-Kill Window=Meta+Alt+Escape,none,Kill Window
-Overview=Meta+W,none,Toggle Overview
-Window Quick Tile Left=none,none,Window Quick Tile Left
-Window Quick Tile Right=none,none,Window Quick Tile Right
-Window Quick Tile Top=none,none,Window Quick Tile Top
-Window Quick Tile Bottom=none,none,Window Quick Tile Bottom
-Switch to Next Keyboard Layout=Meta+Space,none,Switch to Next Keyboard Layout
 
-[plasmashell]
-_k_friendly_name=Plasma
-show dashboard=Meta+A,none,show dashboard
-activate task manager entry 1=none,none,Activate Task Manager Entry 1
-activate task manager entry 2=none,none,Activate Task Manager Entry 2
-activate task manager entry 3=none,none,Activate Task Manager Entry 3
-activate task manager entry 4=none,none,Activate Task Manager Entry 4
-activate task manager entry 5=none,none,Activate Task Manager Entry 5
-activate task manager entry 6=none,none,Activate Task Manager Entry 6
-activate task manager entry 7=none,none,Activate Task Manager Entry 7
-activate task manager entry 8=none,none,Activate Task Manager Entry 8
-activate task manager entry 9=none,none,Activate Task Manager Entry 9
+# Adjacent workspace (Cosmic: Super+Ctrl+{h,j,k,l,arrows})
+Switch One Desktop to the Left=Meta+Ctrl+H	Meta+Ctrl+Left,Meta+Ctrl+Left,Switch One Desktop to the Left
+Switch One Desktop Down=Meta+Ctrl+J	Meta+Ctrl+Down,Meta+Ctrl+Down,Switch One Desktop Down
+Switch One Desktop Up=Meta+Ctrl+K	Meta+Ctrl+Up,Meta+Ctrl+Up,Switch One Desktop Up
+Switch One Desktop to the Right=Meta+Ctrl+L	Meta+Ctrl+Right,Meta+Ctrl+Right,Switch One Desktop to the Right
+
+# Move window to adjacent workspace (Cosmic: Super+Shift+Ctrl+{h,j,k,l,arrows})
+Window One Desktop to the Left=Meta+Ctrl+Shift+H	Meta+Ctrl+Shift+Left,Meta+Ctrl+Shift+Left,Window One Desktop to the Left
+Window One Desktop Down=Meta+Ctrl+Shift+J	Meta+Ctrl+Shift+Down,Meta+Ctrl+Shift+Down,Window One Desktop Down
+Window One Desktop Up=Meta+Ctrl+Shift+K	Meta+Ctrl+Shift+Up,Meta+Ctrl+Shift+Up,Window One Desktop Up
+Window One Desktop to the Right=Meta+Ctrl+Shift+L	Meta+Ctrl+Shift+Right,Meta+Ctrl+Shift+Right,Window One Desktop to the Right
+
+# Window operations
+Window Close=Meta+Q	Alt+F4,Alt+F4,Close Window
+Window Maximize=Meta+M	Meta+PgUp,Meta+PgUp,Maximize Window
+Window Fullscreen=Meta+F11,none,Make Window Fullscreen
+Window Resize=Meta+R,none,Resize Window
+Kill Window=Meta+Alt+Esc	Meta+Ctrl+Esc,Meta+Ctrl+Esc,Kill Window
+
+# Overview (Cosmic: Super+w — already Meta+W by default)
+Overview=Meta+W,Meta+W,Toggle Overview
+
+# Input source switch (Cosmic: Super+Space)
+Switch to Next Keyboard Layout=Meta+Space,none,Switch to Next Keyboard Layout
 
 [ksmserver]
 _k_friendly_name=Session Management
-Lock Session=Meta+Escape,none,Lock Session
-Log Out=Meta+Shift+Escape,none,Log Out
+Lock Session=Meta+Esc	Screensaver	Meta+L,Screensaver	Meta+L,Lock Session
+Log Out=Meta+Shift+Esc	Ctrl+Alt+Del,Ctrl+Alt+Del,Show Logout Screen
 
-[services/org.kde.konsole.desktop]
-_k_friendly_name=Konsole
-_launch=Meta+T,none,Open Terminal
+[plasmashell]
+_k_friendly_name=plasmashell
+# Application Dashboard (Cosmic: Super+a)
+activate application launcher=Meta+A	Meta	Alt+F1,Meta	Alt+F1,Activate Application Launcher
+# Clear task manager entries for Meta+1-9
+activate task manager entry 1=none,Meta+1,Activate Task Manager Entry 1
+activate task manager entry 2=none,Meta+2,Activate Task Manager Entry 2
+activate task manager entry 3=none,Meta+3,Activate Task Manager Entry 3
+activate task manager entry 4=none,Meta+4,Activate Task Manager Entry 4
+activate task manager entry 5=none,Meta+5,Activate Task Manager Entry 5
+activate task manager entry 6=none,Meta+6,Activate Task Manager Entry 6
+activate task manager entry 7=none,Meta+7,Activate Task Manager Entry 7
+activate task manager entry 8=none,Meta+8,Activate Task Manager Entry 8
+activate task manager entry 9=none,Meta+9,Activate Task Manager Entry 9
 
-[services/org.kde.dolphin.desktop]
-_k_friendly_name=Dolphin
-_launch=Meta+F,none,Open File Manager
+[services][org.kde.konsole.desktop]
+_launch=Meta+T
 
-[services/org.kde.firefox.desktop]
-_k_friendly_name=Firefox
-_launch=Meta+B,none,Open Web Browser
+[services][org.kde.dolphin.desktop]
+_launch=Meta+F
+
+[services][org.kde.firefox.desktop]
+_launch=Meta+B

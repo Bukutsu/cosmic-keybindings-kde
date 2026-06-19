@@ -70,10 +70,10 @@ Restores from backup if available.
 | `Meta+Ctrl+L` / `Meta+Ctrl+Right` | Next workspace |
 | `Meta+Ctrl+J` / `Meta+Ctrl+Down` | Next workspace |
 | `Meta+Ctrl+K` / `Meta+Ctrl+Up` | Previous workspace |
-| `Meta+Shift+Ctrl+H/Left` | Move window to previous workspace |
-| `Meta+Shift+Ctrl+L/Right` | Move window to next workspace |
-| `Meta+Shift+Ctrl+J/Down` | Move window to next workspace |
-| `Meta+Shift+Ctrl+K/Up` | Move window to previous workspace |
+| `Meta+Ctrl+Shift+H/Left` | Move window to previous workspace |
+| `Meta+Ctrl+Shift+L/Right` | Move window to next workspace |
+| `Meta+Ctrl+Shift+J/Down` | Move window to next workspace |
+| `Meta+Ctrl+Shift+K/Up` | Move window to previous workspace |
 
 ### Window operations
 | Shortcut | Action |
@@ -90,7 +90,7 @@ Restores from backup if available.
 | `Meta+Escape` | Lock screen |
 | `Meta+Shift+Escape` | Log out |
 | `Meta+Space` | Switch keyboard layout |
-| `Meta+A` | Application dashboard |
+| `Meta+A` | Application Launcher |
 | `Meta+W` | Toggle Overview |
 | `Meta+F` | File manager (Dolphin) |
 | `Meta+T` | Terminal (Konsole) |
