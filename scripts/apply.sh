@@ -36,54 +36,54 @@ apply_service() {
 echo "Setting KWin shortcuts..."
 
 # Focus navigation
-apply_kwin "Switch to Window Left" "META+H${t}META+Left,none,Switch to Window Left"
-apply_kwin "Switch to Window Down" "META+J${t}META+Down,none,Switch to Window Down"
-apply_kwin "Switch to Window Up" "META+K${t}META+Up,none,Switch to Window Up"
-apply_kwin "Switch to Window Right" "META+L${t}META+Right,none,Switch to Window Right"
+apply_kwin "Switch to Window Left" "Meta+H${t}Meta+Left,none,Switch to Window Left"
+apply_kwin "Switch to Window Down" "Meta+J${t}Meta+Down,none,Switch to Window Down"
+apply_kwin "Switch to Window Up" "Meta+K${t}Meta+Up,none,Switch to Window Up"
+apply_kwin "Switch to Window Right" "Meta+L${t}Meta+Right,none,Switch to Window Right"
 
 # Move window in direction
-apply_kwin "Window Pack Left" "META+Shift+H${t}META+Shift+Left,none,Window Pack Left"
-apply_kwin "Window Pack Down" "META+Shift+J${t}META+Shift+Down,none,Window Pack Down"
-apply_kwin "Window Pack Up" "META+Shift+K${t}META+Shift+Up,none,Window Pack Up"
-apply_kwin "Window Pack Right" "META+Shift+L${t}META+Shift+Right,none,Window Pack Right"
+apply_kwin "Window Pack Left" "Meta+Shift+H${t}Meta+Shift+Left,none,Window Pack Left"
+apply_kwin "Window Pack Down" "Meta+Shift+J${t}Meta+Shift+Down,none,Window Pack Down"
+apply_kwin "Window Pack Up" "Meta+Shift+K${t}Meta+Shift+Up,none,Window Pack Up"
+apply_kwin "Window Pack Right" "Meta+Shift+L${t}Meta+Shift+Right,none,Window Pack Right"
 
 # Workspace switching
 for i in $(seq 1 9); do
-    apply_kwin "Switch to Desktop $i" "META+$i,none,Switch to Desktop $i"
+    apply_kwin "Switch to Desktop $i" "Meta+$i,none,Switch to Desktop $i"
 done
 
 # Move window to workspace
 for i in $(seq 1 9); do
-    apply_kwin "Window to Desktop $i" "META+Shift+$i,none,Window to Desktop $i"
+    apply_kwin "Window to Desktop $i" "Meta+Shift+$i,none,Window to Desktop $i"
 done
 
 # Adjacent workspace navigation
-apply_kwin "Switch One Desktop to the Left" "META+Ctrl+H${t}META+Ctrl+Left,none,Switch One Desktop to the Left"
-apply_kwin "Switch One Desktop Down" "META+Ctrl+J${t}META+Ctrl+Down,none,Switch One Desktop Down"
-apply_kwin "Switch One Desktop Up" "META+Ctrl+K${t}META+Ctrl+Up,none,Switch One Desktop Up"
-apply_kwin "Switch One Desktop to the Right" "META+Ctrl+L${t}META+Ctrl+Right,none,Switch One Desktop to the Right"
+apply_kwin "Switch One Desktop to the Left" "Meta+Ctrl+H${t}Meta+Ctrl+Left,none,Switch One Desktop to the Left"
+apply_kwin "Switch One Desktop Down" "Meta+Ctrl+J${t}Meta+Ctrl+Down,none,Switch One Desktop Down"
+apply_kwin "Switch One Desktop Up" "Meta+Ctrl+K${t}Meta+Ctrl+Up,none,Switch One Desktop Up"
+apply_kwin "Switch One Desktop to the Right" "Meta+Ctrl+L${t}Meta+Ctrl+Right,none,Switch One Desktop to the Right"
 
 # Move window to adjacent workspace
-apply_kwin "Window One Desktop to the Left" "META+Shift+Ctrl+H${t}META+Shift+Ctrl+Left,none,Window One Desktop to the Left"
-apply_kwin "Window One Desktop Down" "META+Shift+Ctrl+J${t}META+Shift+Ctrl+Down,none,Window One Desktop Down"
-apply_kwin "Window One Desktop Up" "META+Shift+Ctrl+K${t}META+Shift+Ctrl+Up,none,Window One Desktop Up"
-apply_kwin "Window One Desktop to the Right" "META+Shift+Ctrl+L${t}META+Shift+Ctrl+Right,none,Window One Desktop to the Right"
+apply_kwin "Window One Desktop to the Left" "Meta+Shift+Ctrl+H${t}Meta+Shift+Ctrl+Left,none,Window One Desktop to the Left"
+apply_kwin "Window One Desktop Down" "Meta+Shift+Ctrl+J${t}Meta+Shift+Ctrl+Down,none,Window One Desktop Down"
+apply_kwin "Window One Desktop Up" "Meta+Shift+Ctrl+K${t}Meta+Shift+Ctrl+Up,none,Window One Desktop Up"
+apply_kwin "Window One Desktop to the Right" "Meta+Shift+Ctrl+L${t}Meta+Shift+Ctrl+Right,none,Window One Desktop to the Right"
 
 # Window operations
-apply_kwin "Window Close" "META+Q,none,Window Close"
-apply_kwin "Window Maximize" "META+M,none,Window Maximize"
-apply_kwin "Window FullScreen" "META+F11,none,Window FullScreen"
-apply_kwin "Window Resize" "META+R,none,Window Resize"
-apply_kwin "Kill Window" "META+Alt+Escape,none,Kill Window"
+apply_kwin "Window Close" "Meta+Q,none,Window Close"
+apply_kwin "Window Maximize" "Meta+M,none,Window Maximize"
+apply_kwin "Window FullScreen" "Meta+F11,none,Window FullScreen"
+apply_kwin "Window Resize" "Meta+R,none,Window Resize"
+apply_kwin "Kill Window" "Meta+Alt+Escape,none,Kill Window"
 
 # Overview
-apply_kwin "ShowDesktopGrid" "META+W,none,ShowDesktopGrid"
+apply_kwin "Overview" "Meta+W,none,Toggle Overview"
 
 # Input source switch
-apply_kwin "Switch to Next Keyboard Layout" "META+Space,none,Switch to Next Keyboard Layout"
+apply_kwin "Switch to Next Keyboard Layout" "Meta+Space,none,Switch to Next Keyboard Layout"
 
 echo "Setting Plasma shell shortcuts..."
-apply_plasmashell "show dashboard" "META+A,none,show dashboard"
+apply_plasmashell "show dashboard" "Meta+A,none,show dashboard"
 
 # Clear Meta+1-9 task manager bindings
 for i in $(seq 1 9); do
@@ -91,17 +91,17 @@ for i in $(seq 1 9); do
 done
 
 echo "Setting session shortcuts..."
-apply_ksmserver "Lock Session" "META+Escape,none,Lock Session"
-apply_ksmserver "Log Out" "META+Shift+Escape,none,Log Out"
+apply_ksmserver "Lock Session" "Meta+Escape,none,Lock Session"
+apply_ksmserver "Log Out" "Meta+Shift+Escape,none,Log Out"
 
 echo "Setting application launcher shortcuts..."
-apply_service "org.kde.konsole.desktop" "META+T,none,Open Terminal"
-apply_service "org.kde.dolphin.desktop" "META+F,none,Open File Manager"
+apply_service "org.kde.konsole.desktop" "Meta+T,none,Open Terminal"
+apply_service "org.kde.dolphin.desktop" "Meta+F,none,Open File Manager"
 
 # Detect default browser
 BROWSER=$(xdg-settings get default-web-browser 2>/dev/null || echo "org.kde.firefox.desktop")
 echo "Detected default browser: $BROWSER"
-apply_service "$BROWSER" "META+B,none,Open Web Browser"
+apply_service "$BROWSER" "Meta+B,none,Open Web Browser"
 
 echo "Restarting kglobalaccel to apply changes..."
 systemctl --user restart plasma-kglobalacceld 2>/dev/null || {

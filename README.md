@@ -91,7 +91,7 @@ Restores from backup if available.
 | `Meta+Shift+Escape` | Log out |
 | `Meta+Space` | Switch keyboard layout |
 | `Meta+A` | Application dashboard |
-| `Meta+W` | Workspace overview |
+| `Meta+W` | Toggle Overview |
 | `Meta+F` | File manager (Dolphin) |
 | `Meta+T` | Terminal (Konsole) |
 | `Meta+B` | Web browser (default) |
