@@ -84,6 +84,12 @@ Overview=Meta+W
 view_zoom_in=Meta+=; Meta++; Meta+.
 view_zoom_out=Meta+-; Meta+,
 
+# Clear conflicts with Cosmic shortcuts
+disableInputCapture=none
+Window to Previous Screen=none
+Window to Next Screen=none
+Window Operations Menu=none
+
 # KDE's KWin action with this name is not the active Plasma 6 layout switcher.
 Switch to Next Keyboard Layout=none
 
@@ -135,6 +141,7 @@ activate task manager entry 6=none
 activate task manager entry 7=none
 activate task manager entry 8=none
 activate task manager entry 9=none
+manage activities=none
 
 [org.kde.konsole.desktop][Global Shortcuts]
 _launch=Meta+T
