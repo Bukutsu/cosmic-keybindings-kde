@@ -11,7 +11,22 @@ Faithful port of [COSMIC desktop](https://system76.com/cosmic) keyboard shortcut
 3. Click **Manage Schemes → Import Scheme...**
 4. Select the file and apply
 
-### Option 2: Run script (CLI)
+### Option 2: Manual import
+
+Copy `scheme/cosmic.kksrc` directly into your KDE config:
+
+```bash
+cp scheme/cosmic.kksrc ~/.config/kglobalshortcutsrc
+systemctl --user restart plasma-kglobalacceld
+```
+
+This replaces all your shortcuts. Back up first if needed:
+
+```bash
+cp ~/.config/kglobalshortcutsrc ~/.config/kglobalshortcutsrc.bak
+```
+
+### Option 3: Run script (CLI)
 
 ```bash
 chmod +x scripts/apply.sh
