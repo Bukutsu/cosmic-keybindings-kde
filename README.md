@@ -4,33 +4,13 @@ Faithful port of [COSMIC desktop](https://system76.com/cosmic) keyboard shortcut
 
 ## Installation
 
-### Recommended: Run script (CLI)
-
-```bash
-chmod +x scripts/apply.sh
-./scripts/apply.sh
-```
-
-Backs up existing config and detects your default browser automatically.
-
-### Alternative: Import scheme (GUI)
-
 1. Download `scheme/cosmic.kksrc`
 2. Open **System Settings → Keyboard → Shortcuts**
 3. Click **Manage Schemes → Import Scheme...**
 4. Select the file and apply
 
-**Known limitation:** KDE's scheme import is buggy for application launcher shortcuts (Konsole, Dolphin, browser). Use the script above for full coverage.
-
-Do not copy `scheme/cosmic.kksrc` directly to `~/.config/kglobalshortcutsrc`; KDE import schemes and the live shortcut config use different formats. For headless installs, use `scripts/apply.sh`.
-
-### Remove
-
-```bash
-./scripts/remove.sh
-```
-
-Restores from backup if available.
+> [!NOTE]
+> Do not copy `scheme/cosmic.kksrc` directly to `~/.config/kglobalshortcutsrc`; KDE import schemes and the live shortcut config use different formats.
 
 ## Mapping
 
