@@ -1,1 +1,33 @@
+# Cosmic Keybindings for KDE Plasma 6 - .gitignore
+
+# Planning & Agent Artifacts
 docs/superpowers/
+
+# Backup and Temporary Files
+*~
+*.bak
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# KDE & Desktop Environment files
+.directory
+*.directory
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
