@@ -4,6 +4,9 @@ Faithful port of [COSMIC desktop](https://system76.com/cosmic) keyboard shortcut
 
 ## Installation
 
+> [!IMPORTANT]
+> Ensure you have virtual desktops configured in **System Settings → Window Management → Virtual Desktops** (e.g., 9 desktops) before importing.
+
 1. Download `scheme/cosmic.kksrc`
 2. Open **System Settings → Keyboard → Shortcuts**
 3. Click **Manage Schemes → Import Scheme...**
