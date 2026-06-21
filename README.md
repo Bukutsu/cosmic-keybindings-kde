@@ -12,6 +12,10 @@ Faithful port of [COSMIC desktop](https://system76.com/cosmic) keyboard shortcut
 > [!NOTE]
 > Do not copy `scheme/cosmic.kksrc` directly to `~/.config/kglobalshortcutsrc`; KDE import schemes and the live shortcut config use different formats.
 
+## Upstream source
+
+COSMIC default compositor shortcuts are tracked in [`cosmic-comp/data/keybindings.ron`](https://github.com/pop-os/cosmic-comp/blob/master/data/keybindings.ron). Check that file before updating this KDE scheme. The broader COSMIC desktop repository is [`pop-os/cosmic-epoch`](https://github.com/pop-os/cosmic-epoch).
+
 ## Mapping
 
 ### Window focus (vim-style)
@@ -22,13 +26,13 @@ Faithful port of [COSMIC desktop](https://system76.com/cosmic) keyboard shortcut
 | `Meta+K` / `Meta+Up` | Focus window up |
 | `Meta+L` / `Meta+Right` | Focus window right |
 
-### Move window in direction
+### Move window in direction (COSMIC `Move`)
 | Shortcut | Action |
 |---|---|
-| `Meta+Shift+H` / `Meta+Shift+Left` | Move window left |
-| `Meta+Shift+J` / `Meta+Shift+Down` | Move window down |
-| `Meta+Shift+K` / `Meta+Shift+Up` | Move window up |
-| `Meta+Shift+L` / `Meta+Shift+Right` | Move window right |
+| `Meta+Shift+H` / `Meta+Shift+Left` | Move/pack window left |
+| `Meta+Shift+J` / `Meta+Shift+Down` | Move/pack window down |
+| `Meta+Shift+K` / `Meta+Shift+Up` | Move/pack window up |
+| `Meta+Shift+L` / `Meta+Shift+Right` | Move/pack window right |
 
 ### Workspaces
 | Shortcut | Action |
@@ -76,13 +80,13 @@ Faithful port of [COSMIC desktop](https://system76.com/cosmic) keyboard shortcut
 | `Meta+Shift+Escape` | Log out |
 | `Meta+Space` | Switch input source / keyboard layout |
 | `Meta+A` | Application Launcher |
-| `Meta+W` | Toggle Overview |
+| `Meta+W` / `Launch (A)` | Toggle Overview |
 | `Meta+F` | File manager (Dolphin) |
 | `Meta+T` | Terminal (Konsole) |
 | `Meta+B` | Web browser (default) |
 | `Meta+Alt+S` | Toggle screen reader |
-| `Meta` (tap) | KRunner |
-| `Meta+/` | KRunner |
+| `Meta` (tap) | KRunner / COSMIC Launcher equivalent |
+| `Meta+/` | KRunner / COSMIC Launcher equivalent |
 | `Print` | Screenshot (KDE default) |
 | `Volume Up/Down/Mute` | Audio volume controls |
 | `Microphone Mute` | Toggle microphone mute |

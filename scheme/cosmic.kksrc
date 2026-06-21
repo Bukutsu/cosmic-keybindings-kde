@@ -9,7 +9,7 @@ Switch Window Down=Meta+J; Meta+Down
 Switch Window Up=Meta+K; Meta+Up
 Switch Window Right=Meta+L; Meta+Right
 
-# Window Pack (move window in direction)
+# Move window in direction (Cosmic: Super+Shift+{h,j,k,l,arrows})
 Window Pack Left=Meta+Shift+H; Meta+Shift+Left
 Window Pack Down=Meta+Shift+J; Meta+Shift+Down
 Window Pack Up=Meta+Shift+K; Meta+Shift+Up
@@ -78,7 +78,7 @@ Walk Through Windows=Alt+Tab; Meta+Tab
 Walk Through Windows (Reverse)=Alt+Shift+Tab; Meta+Shift+Tab
 
 # Overview
-Overview=Meta+W
+Overview=Meta+W; Launch (A)
 
 # Zoom
 view_zoom_in=Meta+=; Meta++; Meta+.
