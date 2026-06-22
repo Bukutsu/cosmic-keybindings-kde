@@ -113,7 +113,7 @@ If you use the [Krohnkite](https://codeberg.org/anametologin/Krohnkite) tiling s
 | `Meta+H/J/K/L` | Tiling window focus | Standard direction focus |
 | `Meta+Shift+H/J/K/L` | Tiling window movement | Move window in layout |
 | `Meta+I` | Increase master area capacity | Standard layout grow |
-| `Meta+Shift+F` | Toggle float all | Toggle floating layout |
+| `Meta+Y` | Toggle float all (tiling layout on/off) | Matches COSMIC `Super+Y` (Toggle Tiling) |
 | `Meta+\` / `Meta+|` | Cycle layouts | Next / Previous layout selection |
 
 *Krohnkite defaults that collide with Cosmic/KDE shortcuts (such as `Meta+Ctrl+H/J/K/L` resizing, or direct layout selectors like `Meta+T/M/R`) are disabled (`none`) to protect workspace navigation and application launchers.*
@@ -122,7 +122,6 @@ If you use the [Krohnkite](https://codeberg.org/anametologin/Krohnkite) tiling s
 
 These Cosmic shortcuts have no direct KDE equivalent and are omitted (unless using the Krohnkite integration above):
 
-- `Super+y` — Toggle tiling (KDE lacks dynamic tiling)
 - `Super+s` — Toggle stacking
 - `Super+x` — Swap window in tiling tree
 - `Super+u` / `Super+i` — Focus in/out of tiling tree

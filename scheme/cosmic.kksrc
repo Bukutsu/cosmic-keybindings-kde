@@ -112,6 +112,7 @@ KrohnkitegrowWidth=none
 KrohnkiteIncrease=Meta+I
 KrohnkiteDecrease=none
 KrohnkiteToggleFloat=Meta+G
+KrohnkiteFloatAll=Meta+Y
 KrohnkiteTileLayout=none
 KrohnkiteMonocleLayout=none
 KrohnkiteRotate=Meta+O
