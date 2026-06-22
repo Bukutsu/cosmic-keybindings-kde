@@ -89,12 +89,35 @@ disableInputCapture=none
 Window to Previous Screen=none
 Window to Next Screen=none
 Window Operations Menu=none
+Grid View=none
 
 # KDE's KWin action with this name is not the active Plasma 6 layout switcher.
 Switch to Next Keyboard Layout=none
 
+# Krohnkite Tiling Support (Resolved Conflicts & COSMIC Alignment)
+KrohnkiteFocusNext=none
+KrohnkiteFocusPrev=none
+KrohnkiteFocusLeft=Meta+H
+KrohnkiteFocusRight=Meta+L
+KrohnkiteFocusDown=Meta+J
+KrohnkiteFocusUp=Meta+K
+KrohnkiteShiftLeft=Meta+Shift+H
+KrohnkiteShiftRight=Meta+Shift+L
+KrohnkiteShiftDown=Meta+Shift+J
+KrohnkiteShiftUp=Meta+Shift+K
+KrohnkiteGrowHeight=none
+KrohnkiteShrinkHeight=none
+KrohnkiteShrinkWidth=none
+KrohnkitegrowWidth=none
+KrohnkiteIncrease=Meta+I
+KrohnkiteDecrease=none
+KrohnkiteToggleFloat=Meta+G
+KrohnkiteTileLayout=none
+KrohnkiteMonocleLayout=none
+KrohnkiteRotate=Meta+O
+
 [ksmserver][Global Shortcuts]
-Lock Session=Meta+Esc; Screensaver; Meta+L
+Lock Session=Meta+Esc; Screensaver
 Log Out=Meta+Shift+Esc; Ctrl+Alt+Del
 
 [kaccess][Global Shortcuts]
@@ -151,3 +174,6 @@ _launch=Meta+F
 
 [org.kde.firefox.desktop][Global Shortcuts]
 _launch=Meta+B
+
+[services][helium.desktop]
+new-window=none
