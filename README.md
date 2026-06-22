@@ -86,6 +86,7 @@ COSMIC default compositor shortcuts are tracked in [`cosmic-comp/data/keybinding
 | `Meta+Escape` | Lock screen |
 | `Meta+Shift+Escape` | Log out |
 | `Meta+Space` | Switch input source / keyboard layout |
+| `Meta+0` | Switch to previous desktop (COSMIC LastWorkspace equivalent) |
 | `Meta+A` | Application Launcher |
 | `Meta+W` / `Launch (A)` | Toggle Overview |
 | `Meta+F` | File manager (Dolphin) |
@@ -114,18 +115,17 @@ If you use the [Krohnkite](https://codeberg.org/anametologin/Krohnkite) tiling s
 | `Meta+Shift+H/J/K/L` | Tiling window movement | Move window in layout |
 | `Meta+I` | Increase master area capacity | Standard layout grow |
 | `Meta+Y` | Toggle float all (tiling layout on/off) | Matches COSMIC `Super+Y` (Toggle Tiling) |
+| `Meta+S` | Toggle stacked layout | Matches COSMIC `Super+S` (Toggle Stacking) |
 | `Meta+\` / `Meta+|` | Cycle layouts | Next / Previous layout selection |
 
 *Krohnkite defaults that collide with Cosmic/KDE shortcuts (such as `Meta+Ctrl+H/J/K/L` resizing, or direct layout selectors like `Meta+T/M/R`) are disabled (`none`) to protect workspace navigation and application launchers.*
 
 ## Unmapped (no KDE equivalent)
 
-These Cosmic shortcuts have no direct KDE equivalent and are omitted (unless using the Krohnkite integration above):
+These Cosmic shortcuts have no direct KDE equivalent and are omitted (unless using the Krohnkite integration or workspace mapping above):
 
-- `Super+s` — Toggle stacking
 - `Super+x` — Swap window in tiling tree
 - `Super+u` / `Super+i` — Focus in/out of tiling tree
-- `Super+0` — Last workspace
 - `Super+Shift+0` — Move window to last workspace
 - `Super+Shift+r` — Resize window inward
 - KDE Quick Tile actions — COSMIC does not bind quick tiling; `Super+Arrow` is focus navigation

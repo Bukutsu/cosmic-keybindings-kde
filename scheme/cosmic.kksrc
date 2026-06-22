@@ -31,6 +31,7 @@ Switch to Desktop 6=Meta+6
 Switch to Desktop 7=Meta+7
 Switch to Desktop 8=Meta+8
 Switch to Desktop 9=Meta+9
+Switch to Previous Desktop=Meta+0
 
 # Move window to workspace (Cosmic: Super+Shift+{1-9})
 Window to Desktop 1=Meta+!
@@ -83,6 +84,7 @@ Overview=Meta+W; Launch (A)
 # Zoom
 view_zoom_in=Meta+=; Meta++; Meta+.
 view_zoom_out=Meta+-; Meta+,
+view_actual_size=none
 
 # Clear conflicts with Cosmic shortcuts
 disableInputCapture=none
@@ -115,6 +117,7 @@ KrohnkiteToggleFloat=Meta+G
 KrohnkiteFloatAll=Meta+Y
 KrohnkiteTileLayout=none
 KrohnkiteMonocleLayout=none
+KrohnkiteStackedLayout=Meta+S
 KrohnkiteRotate=Meta+O
 
 [ksmserver][Global Shortcuts]
