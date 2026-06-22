@@ -9,17 +9,17 @@ Switch Window Down=Meta+J; Meta+Down
 Switch Window Up=Meta+K; Meta+Up
 Switch Window Right=Meta+L; Meta+Right
 
-# Move window in direction (Cosmic: Super+Shift+{h,j,k,l,arrows})
-Window Pack Left=Meta+Shift+H; Meta+Shift+Left
-Window Pack Down=Meta+Shift+J; Meta+Shift+Down
-Window Pack Up=Meta+Shift+K; Meta+Shift+Up
-Window Pack Right=Meta+Shift+L; Meta+Shift+Right
+# Move window in direction (Cosmic: Super+Shift+{h,j,k,l})
+Window Pack Left=Meta+Shift+H
+Window Pack Down=Meta+Shift+J
+Window Pack Up=Meta+Shift+K
+Window Pack Right=Meta+Shift+L
 
-# Clear arrow Quick Tile (conflicts with focus)
-Window Quick Tile Left=none
-Window Quick Tile Right=none
-Window Quick Tile Top=none
-Window Quick Tile Bottom=none
+# Quick Tile using Meta+Shift+ArrowKeys
+Window Quick Tile Left=Meta+Shift+Left
+Window Quick Tile Right=Meta+Shift+Right
+Window Quick Tile Top=Meta+Shift+Up
+Window Quick Tile Bottom=Meta+Shift+Down
 
 # Workspace switching (Cosmic: Super+{1-9})
 Switch to Desktop 1=Meta+1; Ctrl+F1; Meta+F1
